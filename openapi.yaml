@@ -1,0 +1,123 @@
+openapi: 3.0.4
+info:
+  title: Keyword Extractor
+  description: Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/keywordextractor:
+    post:
+      summary: Extract Keywords
+      description: Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+      operationId: keywordextractor
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  url: https://en.wikipedia.org/wiki/Email_address
+                  keywords:
+                    email: 91
+                    address: 61
+                    mail: 53
+                    domain: 34
+                    addresses: 34
+                    characters: 27
+                    retrieved: 27
+                    internet: 17
+                    message: 15
+                    validation: 12
+                    mailbox: 12
+                    errata: 12
+                    allowed: 12
+                    messages: 11
+                    systems: 10
+                    ietf: 10
+                    names: 10
+                    user: 10
+                    protocol: 10
+                    internationalized: 9
+                    solid: 9
+                    account: 8
+                    addressing: 8
+                    host: 8
+                    simple: 8
+                    transfer: 8
+                    mailboxes: 8
+                    character: 8
+                    quoted: 8
+                    additional: 7
+                    syntax: 7
+                    verification: 7
+                    form: 7
+                    format: 7
+                    klensin: 7
+                    july: 6
+                    tools: 6
+                    valid: 6
+                    internationalization: 6
+                    group: 6
+                    system: 6
+                    services: 6
+                    case: 6
+                    smtp: 6
+                    ascii: 6
+                    backslash: 6
+                    servers: 6
+                    server: 6
+                    original: 6
+                    archived: 6
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  description: The text to extract keywords from
+              required:
+              - text
+              example:
+                url: https://en.wikipedia.org/wiki/Email_address
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
