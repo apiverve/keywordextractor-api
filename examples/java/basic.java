@@ -14,7 +14,7 @@ public class BasicExample {
         try {
             // Request body
             Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;url&quot;, &quot;https://en.wikipedia.org/wiki/Email_address&quot;);
+        parameters.put(&quot;text&quot;, &quot;Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.&quot;);
 
             // Execute the API request
             APIResponse response = client.execute(parameters);

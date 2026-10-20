@@ -19,7 +19,7 @@ def call_keywordextractor_api():
     try:
         # Request body
         request_body &#x3D; {
-    &#x27;url&#x27;: &#x27;https://en.wikipedia.org/wiki/Email_address&#x27;
+    &#x27;text&#x27;: &#x27;Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.&#x27;
 }
 
         headers = {

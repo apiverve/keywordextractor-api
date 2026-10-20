@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Keyword Extractor
   description: >-
-    Keyword Extractor is a simple tool for extracting keywords from a web page.
-    It returns the keywords and the frequency of each keyword.
+    Keyword Extractor is a keyword extraction API that scans raw text or live
+    webpage URLs to extract key terms and their frequencies. It returns up to 50
+    unique keywords, occurrence counts, total keyword volume, and the top five
+    terms with their percentage share.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/keywordextractor:
     post:
-      summary: Extract Keywords from Text
+      summary: Keyword Extractor
       description: Extract keywords from a body of text
       operationId: keywordextractor
       parameters: []
@@ -101,4 +103,7 @@ components:
 security:
   - api_key: []
 sampleRequest:
-  url: https://en.wikipedia.org/wiki/Email_address
+  text: >-
+    Machine learning is a subset of artificial intelligence that enables systems
+    to learn from data. Deep learning uses neural networks to process complex
+    patterns in data.

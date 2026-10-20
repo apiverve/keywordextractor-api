@@ -1,13 +1,13 @@
-# [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+Keyword Extractor is a keyword extraction API that scans raw text or live webpage URLs to extract key terms and their frequencies. It returns up to 50 unique keywords, occurrence counts, total keyword volume, and the top five terms with their percentage share.
 
 The Keyword Extractor API provides a simple, reliable way to integrate keyword extractor functionality into your applications. Built for developers who need production-ready keyword extractor capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -31,7 +31,7 @@ The Keyword Extractor API provides a simple, reliable way to integrate keyword e
 async function callKeywordExtractorAPI() {
     try {
         const requestBody = {
-    "url": "https://en.wikipedia.org/wiki/Email_address"
+    "text": "Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data."
 };
 
         const response = await fetch('https://api.apiverve.com/v1/keywordextractor', {
@@ -60,7 +60,7 @@ curl -X POST "https://api.apiverve.com/v1/keywordextractor" \
   -H "x-api-key: YOUR_API_KEY_HERE" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://en.wikipedia.org/wiki/Email_address"
+    "text": "Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data."
 }'
 ```
 
@@ -167,7 +167,7 @@ go get github.com/apiverve/keywordextractor-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/keywordextractor](https://docs.apiverve.com/ref/keywordextractor)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -268,7 +268,7 @@ A real response from the Keyword Extractor API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Keyword Extractor API](https://apiverve.com/marketplace/keywordextractor?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

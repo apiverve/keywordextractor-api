@@ -15,7 +15,7 @@ async function callKeywordExtractorAPI() {
   try {
     // Request body
     const requestBody &#x3D; {
-    &quot;url&quot;: &quot;https://en.wikipedia.org/wiki/Email_address&quot;
+    &quot;text&quot;: &quot;Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.&quot;
 };
 
     const response = await fetch(API_URL, {
