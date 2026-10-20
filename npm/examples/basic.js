@@ -15,7 +15,7 @@ const api = new keywordextractorAPI({
 
 // Example query
 var query = {
-  "url": "https://en.wikipedia.org/wiki/Email_address"
+  "text": "Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data."
 };
 
 // Make the API request using callback
