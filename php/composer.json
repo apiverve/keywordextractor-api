@@ -1,7 +1,7 @@
 {
     "name": "apiverve/keywordextractor",
-    "description": "Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.",
-    "version": "1.2.0",
+    "description": "Keyword Extractor is a keyword extraction API that scans raw text or live webpage URLs to extract key terms and their frequencies. It returns up to 50 unique keywords, occurrence counts, total keyword volume, and the top five terms with their percentage share.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "keywordextractor",
-        "keyword extractor",
-        "keyword extraction",
         "keyword extractor api",
         "keyword extraction api",
-        "keyword extractor tool"
+        "term extraction api",
+        "extract keywords from text",
+        "extract keywords from url"
     ],
-    "homepage": "https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/keywordextractor",

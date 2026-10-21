@@ -1,6 +1,6 @@
 # Keyword Extractor API - PHP Package
 
-Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+Keyword Extractor is a keyword extraction API that scans raw text or live webpage URLs to extract key terms and their frequencies. It returns up to 50 unique keywords, occurrence counts, total keyword volume, and the top five terms with their percentage share.
 
 ## Installation
 
@@ -27,7 +27,7 @@ use APIVerve\Keywordextractor\Client;
 $client = new Client('YOUR_API_KEY');
 
 // Make a request
-$response = $client->execute(['url' => 'https://en.wikipedia.org/wiki/Email_address']);
+$response = $client->execute(['text' => 'Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.']);
 
 // Print the response
 print_r($response);
@@ -42,7 +42,7 @@ use APIVerve\Keywordextractor\Exceptions\APIException;
 use APIVerve\Keywordextractor\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['url' => 'https://en.wikipedia.org/wiki/Email_address']);
+    $response = $client->execute(['text' => 'Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.']);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());
@@ -123,11 +123,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/keywordextractor?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/keywordextractor?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

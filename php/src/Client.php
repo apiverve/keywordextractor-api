@@ -15,11 +15,11 @@ use APIVerve\Keywordextractor\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['url' => 'https://en.wikipedia.org/wiki/Email_address']);
+ * $response = $client->execute(['text' => 'Machine learning is a subset of artificial intelligence that enables systems to learn from data. Deep learning uses neural networks to process complex patterns in data.']);
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -34,7 +34,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'text' => ['type' => 'string', 'required' => true]
+        'text' => ['type' => 'string', 'required' => true, 'maxLength' => 50000]
     ];
 
     /**
