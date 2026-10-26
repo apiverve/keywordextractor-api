@@ -31,6 +31,13 @@ declare module '@apiverve/keywordextractor' {
       totalOccurrences: number | null;
       keywords:         Keywords;
       topKeywords:      TopKeyword[];
+      keyPhrases:       KeyPhrase[];
+  }
+  
+  interface KeyPhrase {
+      phrase:    null | string;
+      relevance: number | null;
+      count:     number | null;
   }
   
   interface Keywords {
