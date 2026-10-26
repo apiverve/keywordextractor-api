@@ -259,6 +259,58 @@ A real response from the Keyword Extractor API:
         "count": 34,
         "percentage": 5.1
       }
+    ],
+    "keyPhrases": [
+      {
+        "phrase": "email addresses",
+        "relevance": 0.621,
+        "count": 5
+      },
+      {
+        "phrase": "mail exchange",
+        "relevance": 0.578,
+        "count": 4
+      },
+      {
+        "phrase": "email address wikipedia",
+        "relevance": 0.574,
+        "count": 1
+      },
+      {
+        "phrase": "mail system",
+        "relevance": 0.558,
+        "count": 2
+      },
+      {
+        "phrase": "smtp",
+        "relevance": 0.523,
+        "count": 4
+      },
+      {
+        "phrase": "valid email",
+        "relevance": 0.512,
+        "count": 2
+      },
+      {
+        "phrase": "mail transfer",
+        "relevance": 0.491,
+        "count": 2
+      },
+      {
+        "phrase": "mailbox host",
+        "relevance": 0.463,
+        "count": 2
+      },
+      {
+        "phrase": "rfc",
+        "relevance": 0.422,
+        "count": 5
+      },
+      {
+        "phrase": "domain name",
+        "relevance": 0.36,
+        "count": 4
+      }
     ]
   }
 }
