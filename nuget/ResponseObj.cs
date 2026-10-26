@@ -49,6 +49,21 @@ namespace APIVerve.API.KeywordExtractor
 
         [JsonProperty("topKeywords")]
         public TopKeyword[] TopKeywords { get; set; }
+
+        [JsonProperty("keyPhrases")]
+        public KeyPhrase[] KeyPhrases { get; set; }
+    }
+
+    public partial class KeyPhrase
+    {
+        [JsonProperty("phrase")]
+        public string Phrase { get; set; }
+
+        [JsonProperty("relevance")]
+        public double? Relevance { get; set; }
+
+        [JsonProperty("count")]
+        public long? Count { get; set; }
     }
 
     public partial class Keywords
