@@ -1,0 +1,16 @@
+name: apiverve_keywordextractor
+description: "Keyword Extractor is a keyword extraction API that scans raw text or live webpage URLs to extract key terms and their frequencies. It returns up to 50 unique keywords, occurrence counts, total keyword volume, and the top five terms with their percentage share."
+version: 1.2.5
+homepage: https://apiverve.com/marketplace/keywordextractor?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/keywordextractor-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
